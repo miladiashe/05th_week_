@@ -10,10 +10,10 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &input);
 	
 	if (input<=0)
-	printf("음수입니다 \n");
+	printf("negative \n");
 	
 	else 
-	printf("양수입니다 \n");
+	printf("positive \n");
 	
 	
 	
