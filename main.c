@@ -5,19 +5,27 @@
 
 int main(int argc, char *argv[]) {
 	
-	int numnum = 0;
-	char c;
+	int numnum, answer = 404, c = 0;
 	
-	printf ("write here\n");
-	while ((c = getchar()) != '\n')
+	printf ("game\n");
+	
+	numnum=0;
+	do
 	{
-		if (c <= '9' && c>= '0')
+		scanf("%d", &numnum);
+		if (numnum>answer)
 		{
-			numnum++;
+			printf("low\n");
 		}
+			else if(numnum<answer)
+		{
+			printf("high \n");
+		}
+		c++;
 	}
-	
-	printf ("\n%i\n", numnum);
+	while (numnum!=answer);
+	printf ("\n %d try \n", c);
+ 
 	
 	return 0;
 }
