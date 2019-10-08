@@ -5,10 +5,21 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
+	int numnum = 0;
+	char c;
 	
-	for (i=0; i<10; i++)
-		printf("hell world\n");
+	printf ("write here\n");
+	while ((c = getchar()) != '\n')
+	{
+		if (c <= '9' && c>= '0')
+		{
+			numnum++;
+		}
+	}
+	
+	printf ("\n%i\n", numnum);
 	
 	return 0;
 }
+
+
